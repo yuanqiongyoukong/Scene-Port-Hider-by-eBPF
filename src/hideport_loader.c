@@ -536,6 +536,10 @@ int main(int argc, char **argv)
                                  &bind_ret_link);
         if (err) {
             fprintf(stderr, "warning: bind probes unavailable; bind rewrite disabled\n");
+            bpf_link__destroy(getsockname_ret_link);
+            bpf_link__destroy(getsockname_entry_link);
+            getsockname_ret_link = NULL;
+            getsockname_entry_link = NULL;
             err = 0;
         } else {
             bind_rewrite_enabled = 1;
