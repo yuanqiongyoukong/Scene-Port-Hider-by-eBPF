@@ -412,16 +412,3 @@ EXTRA_ALLOWED_UIDS="10384"
 说明这个模块不是用当前手机的 `/sys/kernel/btf/vmlinux` 构建出来的。
 
 请重新从当前手机导出 `vmlinux.btf`，上传到自己的 Fork，再跑一次 GitHub Actions。
-
-## 捐赠
-
-如果您觉得这个模块对您有帮助，可以考虑请作者喝杯咖啡：
-
-特别感谢：
-
-- 里（Luna Developers）
-- 欣（Coolapk）
-
-| 微信支付 | 支付宝 |
-| :---: | :---: |
-| ![微信支付](wx.png) | ![支付宝](zfb.jpg) |
